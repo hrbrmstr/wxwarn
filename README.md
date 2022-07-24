@@ -17,8 +17,11 @@ print_alert(43.2683199, -70.8635506);
 
 ### Command line
 
-```rust
+```shell
 $ wxwarn --lat="43.2683199" --lon="-70.8635506"
+```
+
+```plain
 Heat Advisory issued July 22 at 2:51PM EDT until July 24 at 8:00PM EDT by NWS Gray ME
 
 * WHAT...Heat index values into the middle to upper 90s.
