@@ -1,0 +1,24 @@
+[package]
+name = "wxwarn"
+version = "0.1.0"
+edition = "2021"
+authors = [ "boB Rudis (@hrbrmstr)" ]
+description = "Display NOAA weather alerts for a given coordinate."
+license = "MIT"
+homepage = "https://github.com/hrbrmstr/wxwarn"
+repository = "https://github.com/hrbrmstr/wx-warn"
+keywords = [ "noaa", "weather", "weather-alert" ]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.2.14", features = ["derive"] }
+reqwest = { version = "0.11.11", features = [ "blocking",  "json" ] }
+tempfile = "3.3.0"
+flate2 = "1.0.24"
+tar = "0.4.38"
+shapefile = { version = "0.3.0", features = [ "geo-types" ] }
+geo = "0.22.1"
+serde = "1.0.137"
+serde_json = "1.0.81"
+serde_derive = "1.0.137"
